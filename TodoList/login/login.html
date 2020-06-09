@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>LogIn Form</title>
+    <link rel="stylesheet" type="text/css" href="bcss/style1.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FILE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">VIEW</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+             HELP
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">About</a>
+              <a class="dropdown-item" href="#">check for update</a>
+              <a class="dropdown-item" href="#">Exit</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">SignIn</a>
+          </li>
+        </ul>
+        </nav>
+    <div class="login-box">
+      <form action="" onsubmit="return validate(redirect)">
+        <h3>_Todo List_</h3>
+        <h1>LogIn</h1>
+        <div class="textbox">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            
+            <input type="text" placeholder=" User Name" name="user" id="user" autocomplete="off">
+            
+              <span id="users" class="text-danger"></span>
+        </div>
+        <div class="textbox">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            
+            <input type="password" placeholder="  Password" name="pwd" id="pwd">
+
+              <span id="pwds" class="text-danger"></span>
+        </div>
+        <br>
+        <input type="submit" name="submit" value="submit" class="btn btn-success">
+       
+      </form>
+    </div>
+    <script src="validation.js"></script>
+    
+</body>
+</html>
